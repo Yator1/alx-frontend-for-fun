@@ -1,0 +1,26 @@
+/* Container setup with flex layout */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap onto the next line if they exceed the container width */
+    gap: 1rem;       /* Adds spacing between the boxes */
+    justify-content: space-around; /* Centers the boxes with space around each */
+}
+
+/* Style each box */
+.box {
+    flex: 1 1 18%; /* Sets flexible width to about 18% with resizing capabilities */
+    height: 100px; /* Fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+}
+
+/* Assigning custom colors to each box */
+.box:nth-child(1) { background-color: #FF6F61; } /* Example color */
+.box:nth-child(2) { background-color: #6B5B95; }
+.box:nth-child(3) { background-color: #88B04B; }
+.box:nth-child(4) { background-color: #F7CAC9; }
+.box:nth-child(5) { background-color: #92A8D1; }
